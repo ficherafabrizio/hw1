@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Registrazione - LifeJourney</title>
+        <link rel="shortcut icon" href="images/favicon.png">
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='register.css'>
+        <script src='register.js' defer></script>
+    </head>
+    <body>
+        <header><a href="homepage.html" id="backimg"><img src="images/backicon.png" /></a>&nbsp;</header>
+        <h1>LifeJourney</h1>
+        <main>
+            <h2>Registrazione</h2>
+            <p class="hidden errore"  id="errore1">
+                Dati non validi:<br>
+                Assicurrati di usare un nome utente<br> e password tra le 5 e 20 lettere.<br>
+                La password deve contenere almeno <br>una lettera maiuscola, una minuscola e un numero.
+            </p>
+            <p class="hidden errore"  id="errore2">
+                Dati non validi:<br>
+                Username già in uso.
+            </p>
+            <form name='nome_form' method='post' action="login.php">
+                    <label>Nome utente <input type='text' name='username'></label>
+                    <label>Password <input type='password' name='password'></label>
+                    <label>&nbsp;<input type='submit' value='Crea account' id="regbutton"></label>
+            </form>
+        </main>
+        <p id="logindiv">
+            Hai già un account? <br> <a href='login.php' id="loginlink">Login</a>
+        </p>
+        <footer>
+            <p>
+                1000007725 &nbsp;  <a href="github.com/ficherafabrizio/hw1">HW1</a>
+            </p>
+        </footer>
+    </body>
+</html>
